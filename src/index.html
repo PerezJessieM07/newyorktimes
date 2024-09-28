@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Newyorktimes news project</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                font-family: 'poppins', sans-serif;
+                position: relative;
+                background: #333;
+            }
+        </style>
+    </head>
+    <body onload="displayDate()">
+        <header>
+            <div class="navbar obj-width">
+                <div class="date">
+                    <p>Date: <span id="date"></span></p>
+                </div>
+                <a class="logo" href="index.html">
+                    The
+                    <i class="new">New</i>
+                    <i class="york">York</i>
+                    <i class="times">Times</i>
+                </a>
+                <div class="business-cont">
+                    <select name="business" id="business" onchange="handleSelection(this)">
+                        <optgroup label="SECTIONS">
+                            <option value="https://www.nytimes.com/international/section/business">Business</option>
+                            <option value="https://www.nytimes.com/international/section/technology">Tech</option>
+                            <option value="https://www.nytimes.com/international/section/business/economy">Economy</option>
+                            <option value="https://www.nytimes.com/international/section/business/media">Media</option>
+                            <option value="https://www.nytimes.com/section/markets-overview">Finance and Markets</option>
+                            <option value="https://www.nytimes.com/international/section/business/dealbook">DealBook</option>
+                            <option value="https://www.nytimes.com/international/section/technology/personaltech">Personal Tech</option>
+                            <option value="https://www.nytimes.com/international/section/business/energy-environment">Energy Transition</option>
+                            <option value="https://www.nytimes.com/international/section/your-money">Your Money</option>
+                        </optgroup>
+                        <optgroup label="TOP STORIES">
+                            <option value="https://www.nytimes.com/news-event/economy-business-us">U.S. Economy</option>
+                            <option value="https://www.nytimes.com/section/markets-overview">Stock Market</option>
+                            <option value="https://www.nytimes.com/spotlight/artificial-intelligence">Artificial Intelligence</option>
+                        </optgroup>
+                        <optgroup label="NEWSLETTERS">
+                            <option value="https://www.nytimes.com/newsletters">See all newsletters</option>
+                        </optgroup>
+                        <optgroup label="PODCASTS">
+                            <option value="https://www.nytimes.com/spotlight/podcasts">See all podcasts</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <div class="news">
+            <h1>TODAY'S NEWS</h1>
+            <main class="obj-width" id="bg-container">
+                <!-- <div class="blog-card">
+                    <img src="IMAGES/nyc.png" alt="">
+                    <h2>The newyork flag</h2>
+                    <p>The New York City flag features the vertical colors of blue, white and orange with the Seal of New York City at its center. The tricolor design denotes the City's 1625 origins as a colony of the Dutch Republic. Then called New Amsterdam, the colony was settled on the island of Manhattan.</p>
+                </div>
+                  -->
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    <footer>
+        <div class="footer-icon">
+            <nav class="reference">
+                <a href="https://www.nytimes.com/"><img src="nyt-logo.png" alt="reference"></a>
+            </nav>
+            <p>&copy; 2024 For Educational Purposes</p>
+            <p>&copy; Powered by New York Times.</p>
+        </div>
+    </footer>
+</html>

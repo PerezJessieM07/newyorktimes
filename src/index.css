@@ -1,0 +1,194 @@
+/* Global CSS */
+.obj-width {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    position: sticky;
+    top: 0; 
+    background: #3d8d64;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+
+.navbar .date p {
+    color: #3d8d64;
+    background: #333;
+    border-radius: 5px; 
+    font-weight: 700;
+}
+
+select {
+    width: 100px;
+}
+
+.navbar .business-cont select {
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    font-size: 1em;
+    color: #333;
+}
+
+.navbar .business-cont select optgroup {
+    background: #3d8d64;
+    color: #333;
+}
+
+.navbar .logo {
+    color: #3d8d64;
+    background: #333;
+    border-radius: 0 10px 0 10px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.navbar .new {
+    color: #3b22b6;
+}
+
+.navbar .york {
+    color: #fff;
+}
+
+.navbar .times {
+    color: #e0743e;
+}
+
+.news h1 {
+    margin-top: 40px; /* Use px not PX */
+    display: flex;
+    justify-content: center;
+    color: #3d8d64; 
+}
+
+#bg-container {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    width: 280px;
+    border: 2px solid #3d8d64;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.blog-card:hover {
+    box-shadow: 4px 4px 10px rgb(137, 243, 167);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blog-card h2 {
+    padding: 10px;
+    color: #3d8d64;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.blog-card p {
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 536px) {
+    header {
+        position: sticky;
+        padding: 0 5px;
+        top: 0; /* Ensure the top property is included */
+    }
+
+    .navbar .business-cont select {
+        border: none; /* Add a border for mobile clarity */
+        background-color: #3d8d64; /* Ensure the background is visible on mobile */
+        color: #333;
+        font-size: 0.3em;
+    }
+
+    .navbar .business-cont select optgroup {
+        background-color: #3d8d64; /* Light background for options group */
+        color: #333;
+    }
+
+    .navbar .date p {
+        color: #333;
+        background: #3d8d64;
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 0.5em;
+    }
+
+    select {
+        width: 50px;
+    }
+
+    .navbar .logo {
+        font-size: 0.8rem;
+        border-radius: 0 5px 0 5px;
+    }
+
+    .blog-card {
+        width: 100%; /* Make the card take full width on mobile */
+    }
+
+    .blog-card img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .blog-card h2 {
+        color: #3d8d64; /* Darker color for better readability on mobile */
+        font-size: 0.7rem; /* Smaller font for mobile */
+        font-weight: 200;
+    }
+
+    .blog-card p {
+        font-size: 0.5rem; /* Smaller font for mobile */
+        font-weight: 100;
+    }
+}
+
+.footer-icon {
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+p {
+    color: #fff;
+}
